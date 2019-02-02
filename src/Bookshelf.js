@@ -1,22 +1,24 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ListBooks from "./ListBooks";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ListBooks from './ListBooks';
 
 function Bookshelf(props) {
-  const { title, books, onUpdateShelf } = props;
+  const { shelf, books, onRefresh } = props;
 
   return (
-    <div>
-      <h1>Bookshelf</h1>
-      <ListBooks books={books} onUpdateShelf={onUpdateShelf} />
+    <div className="bookshelf">
+      <h2 className="bookshelf-title">{shelf.title}</h2>
+      <div className="bookshelf-books">
+        <ListBooks books={books} onRefresh={onRefresh} />
+      </div>
     </div>
   );
 }
 
 Bookshelf.propTypes = {
-  title: PropTypes.string.isRequired,
+  shelf: PropTypes.object.isRequired,
   books: PropTypes.array.isRequired,
-  onUpdateShelf: PropTypes.func.isRequired
+  onRefresh: PropTypes.func.isRequired
 };
 
 export default Bookshelf;
