@@ -1,18 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function AddBook(props) {
-  const { onOpenSearch } = props;
-
   return (
     <div className="open-search">
-      <button onClick={onOpenSearch}>Add a book</button>
+      <Link to="/search">Add a book</Link>
     </div>
   );
 }
-
-AddBook.propTypes = {
-  onOpenSearch: PropTypes.func.isRequired
-};
 
 export default AddBook;

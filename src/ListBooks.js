@@ -1,16 +1,29 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import Book from './Book';
+import React from 'react';
+import AddBook from './AddBook';
+import Bookshelf from './Bookshelf';
+import { SHELVES } from './constants';
 
 function ListBooks(props) {
   const { books, onRefresh } = props;
 
   return (
-    <ol className="books-grid">
-      {books.map((book) => (
-        <Book key={book.id} book={book} onRefresh={onRefresh} />
-      ))}
-    </ol>
+    <div className="list-books">
+      <div className="list-books-title">
+        <h1>MyReads</h1>
+      </div>
+      <div className="list-books-content">
+        {SHELVES.map((shelf) => (
+          <Bookshelf
+            key={shelf.id}
+            shelf={shelf}
+            books={books.filter((book) => book.shelf === shelf.id)}
+            onRefresh={onRefresh}
+          />
+        ))}
+      </div>
+      <AddBook />
+    </div>
   );
 }
 

@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Bookshelf from './Bookshelf';
-import AddBook from './AddBook';
-import SearchBooks from './SearchBooks';
-import * as BooksAPI from './BooksAPI';
-import { SHELVES } from './constants';
+import { Route } from 'react-router-dom';
 import './App.css';
+import * as BooksAPI from './BooksAPI';
+import ListBooks from './ListBooks';
+import SearchBooks from './SearchBooks';
 
 class BooksApp extends Component {
   state = {
@@ -58,26 +57,11 @@ class BooksApp extends Component {
 
     return (
       <div className="app">
-        {this.state.showSearchPage ? (
-          <SearchBooks myBooks={books} onCloseSearch={this.closeSearch} onRefresh={this.getAllMyBooks} />
-        ) : (
-          <div className="list-books">
-            <div className="list-books-title">
-              <h1>MyReads</h1>
-            </div>
-            <div className="list-books-content">
-              {SHELVES.map((shelf) => (
-                <Bookshelf
-                  key={shelf.id}
-                  shelf={shelf}
-                  books={books.filter((book) => book.shelf === shelf.id)}
-                  onRefresh={this.getAllMyBooks}
-                />
-              ))}
-            </div>
-            <AddBook onOpenSearch={this.openSearch} />
-          </div>
-        )}
+        <Route
+          path="/search"
+          render={() => <SearchBooks myBooks={books} onCloseSearch={this.closeSearch} onRefresh={this.getAllMyBooks} />}
+        />
+        <Route exact path="/" render={() => <ListBooks books={books} onRefresh={this.getAllMyBooks} />} />
       </div>
     );
   }

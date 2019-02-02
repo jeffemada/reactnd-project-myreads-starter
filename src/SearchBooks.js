@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import ListBooks from './ListBooks';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import * as BooksAPI from './BooksAPI';
+import BooksGrid from './BooksGrid';
 
 class SearchBooks extends Component {
   state = { books: [] };
@@ -56,14 +57,14 @@ class SearchBooks extends Component {
 
   render() {
     const { books } = this.state;
-    const { onCloseSearch, onRefresh } = this.props;
+    const { onRefresh } = this.props;
 
     return (
       <div className="search-books">
         <div className="search-books-bar">
-          <button className="close-search" onClick={onCloseSearch}>
+          <Link className="close-search" to="/">
             Close
-          </button>
+          </Link>
           <div className="search-books-input-wrapper">
             <form>
               <input type="text" placeholder="Search by title or author" onChange={this.searchBooks} />
@@ -71,7 +72,7 @@ class SearchBooks extends Component {
           </div>
         </div>
         <div className="search-books-results">
-          <ListBooks books={books} onRefresh={onRefresh} />
+          <BooksGrid books={books} onRefresh={onRefresh} />
         </div>
       </div>
     );
