@@ -1,7 +1,7 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import ChangeBookshelf from './ChangeBookshelf';
+import React from 'react';
 import * as BooksAPI from './BooksAPI';
+import ChangeBookshelf from './ChangeBookshelf';
 
 function Book(props) {
   const { onRefresh, book } = props;
