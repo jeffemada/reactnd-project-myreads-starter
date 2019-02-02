@@ -7,12 +7,14 @@ function Book(props) {
   const { onRefresh, book } = props;
 
   /**
-   * Altera o livro de preteleira.
+   * Altera o livro de prateleira.
    * @param {string} shelfId - identificador da pratelira selecionada
    */
   const updateBookshelf = (shelfId) => {
     BooksAPI.update(book, shelfId).then(() => {
       onRefresh();
+      // para visualizar imediatamente a nova prateleira na tela de pesquisa
+      book.shelf = shelfId;
     });
   };
 
@@ -22,14 +24,16 @@ function Book(props) {
         <div className="book-top">
           <div
             className="book-cover"
-            style={{
-              backgroundImage: `url("${book.imageLinks.thumbnail}")`
-            }}
+            style={
+              book.imageLinks && {
+                backgroundImage: `url("${book.imageLinks.thumbnail}")`
+              }
+            }
           />
-          <ChangeBookshelf currentShelf={book.shelf} onUpdateBookshelf={updateBookshelf} />
+          <ChangeBookshelf currentShelf={book.shelf ? book.shelf : 'none'} onUpdateBookshelf={updateBookshelf} />
         </div>
         <div className="book-title">{book.title}</div>
-        <div className="book-authors">{book.authors.join(', ')}</div>
+        <div className="book-authors">{book.authors ? book.authors.join(', ') : ''}</div>
       </div>
     </li>
   );

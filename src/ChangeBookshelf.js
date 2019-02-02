@@ -25,6 +25,7 @@ function ChangeBookshelf(props) {
             {shelf.title}
           </option>
         ))}
+        <option value="none">None</option>
       </select>
     </div>
   );

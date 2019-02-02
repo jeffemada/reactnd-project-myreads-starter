@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Bookshelf from './Bookshelf';
+import AddBook from './AddBook';
+import SearchBooks from './SearchBooks';
 import * as BooksAPI from './BooksAPI';
 import { SHELVES } from './constants';
 import './App.css';
 
-class BooksApp extends React.Component {
+class BooksApp extends Component {
   state = {
     books: [],
     /**
@@ -38,6 +40,18 @@ class BooksApp extends React.Component {
     });
   };
 
+  openSearch = () => {
+    this.setState({ showSearchPage: true });
+  };
+
+  closeSearch = () => {
+    this.setState({ showSearchPage: false });
+  };
+
+  /*
+  TODO: tratamento de erros https://reactjs.org/docs/error-boundaries.html
+  */
+
   render() {
     const { books } = this.state;
     console.log('App render');
@@ -45,27 +59,7 @@ class BooksApp extends React.Component {
     return (
       <div className="app">
         {this.state.showSearchPage ? (
-          <div className="search-books">
-            <div className="search-books-bar">
-              <button className="close-search" onClick={() => this.setState({ showSearchPage: false })}>
-                Close
-              </button>
-              <div className="search-books-input-wrapper">
-                {/*
-                  NOTES: The search from BooksAPI is limited to a particular set of search terms.
-                  You can find these search terms here:
-                  https://github.com/udacity/reactnd-project-myreads-starter/blob/master/SEARCH_TERMS.md
-
-                  However, remember that the BooksAPI.search method DOES search by title or author. So, don't worry if
-                  you don't find a specific author or title. Every search is limited by search terms.
-                */}
-                <input type="text" placeholder="Search by title or author" />
-              </div>
-            </div>
-            <div className="search-books-results">
-              <ol className="books-grid" />
-            </div>
-          </div>
+          <SearchBooks myBooks={books} onCloseSearch={this.closeSearch} onRefresh={this.getAllMyBooks} />
         ) : (
           <div className="list-books">
             <div className="list-books-title">
@@ -81,9 +75,7 @@ class BooksApp extends React.Component {
                 />
               ))}
             </div>
-            <div className="open-search">
-              <button onClick={() => this.setState({ showSearchPage: true })}>Add a book</button>
-            </div>
+            <AddBook onOpenSearch={this.openSearch} />
           </div>
         )}
       </div>
