@@ -2,6 +2,11 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import BooksGrid from './BooksGrid';
 
+/**
+ * @description Representa uma prateleira.
+ * @constructor
+ * @param {Object} props
+ */
 function Bookshelf(props) {
   const { shelf, books, onRefresh } = props;
 

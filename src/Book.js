@@ -3,11 +3,16 @@ import React from 'react';
 import * as BooksAPI from './BooksAPI';
 import ChangeBookshelf from './ChangeBookshelf';
 
+/**
+ * @description Representa um livro.
+ * @constructor
+ * @param {Object} props
+ */
 function Book(props) {
   const { onRefresh, book } = props;
 
   /**
-   * Altera o livro de prateleira.
+   * @description Altera o livro de prateleira.
    * @param {string} shelfId - identificador da pratelira selecionada
    */
   const updateBookshelf = (shelfId) => {

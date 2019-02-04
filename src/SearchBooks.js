@@ -4,11 +4,15 @@ import { Link } from 'react-router-dom';
 import * as BooksAPI from './BooksAPI';
 import BooksGrid from './BooksGrid';
 
+/**
+ * @description Representa a pesquisa de livros.
+ * @constructor
+ */
 class SearchBooks extends Component {
   state = { books: [] };
 
   /**
-   * Reconsulta o livro.
+   * @description Reconsulta o livro.
    * @param {Object} bookId - identificador livro
    */
   refreshBook = (bookId) => {
@@ -25,7 +29,7 @@ class SearchBooks extends Component {
   };
 
   /**
-   * Atualiza as prateleiras dos livros que já estão na minha estante.
+   * @description Atualiza as prateleiras dos livros que já estão na minha estante.
    * @param {Array} books - lista de livros retornados na pesquisa
    */
   updateBookshelfOfMyBooks = (books) => {
@@ -44,7 +48,7 @@ class SearchBooks extends Component {
   };
 
   /**
-   * Ouvinte do evento de mudança no campo de pesquisa.
+   * @description Ouvinte do evento de mudança no campo de pesquisa.
    * @param {Event} event - evento
    */
   searchBooks = (event) => {

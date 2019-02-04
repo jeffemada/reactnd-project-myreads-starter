@@ -5,20 +5,25 @@ import * as BooksAPI from './BooksAPI';
 import ListBooks from './ListBooks';
 import SearchBooks from './SearchBooks';
 
+/**
+ * @description Representa a aplicação.
+ * @constructor
+ * @param {Object} props
+ */
 class BooksApp extends Component {
   state = {
     books: []
   };
 
   /**
-   * Método do ciclo de vida do React invocado logo após o componente ser montado.
+   * @description Método do ciclo de vida do React invocado logo após o componente ser montado.
    */
   componentDidMount() {
     this.getAllMyBooks();
   }
 
   /**
-   * Retorna todos os livros que estão na estante.
+   * @description Retorna todos os livros que estão na estante.
    */
   getAllMyBooks = () => {
     BooksAPI.getAll().then((books) => {

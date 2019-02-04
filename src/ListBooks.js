@@ -4,6 +4,11 @@ import AddBook from './AddBook';
 import Bookshelf from './Bookshelf';
 import { SHELVES } from './constants';
 
+/**
+ * @description Representa a listagem dos livros por prateleiras.
+ * @constructor
+ * @param {Object} props
+ */
 function ListBooks(props) {
   const { books, onRefresh } = props;
 

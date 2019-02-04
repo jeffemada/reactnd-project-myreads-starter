@@ -2,11 +2,16 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { SHELVES } from './constants';
 
+/**
+ * @description Representa a seleção de prateleiras.
+ * @constructor
+ * @param {Object} props
+ */
 function ChangeBookshelf(props) {
   const { currentShelf, onUpdateBookshelf } = props;
 
   /**
-   * Ouvinte do evento de mudança na seleção de prateleiras.
+   * @description Ouvinte do evento de mudança na seleção de prateleiras.
    * @param {Event} event - evento
    */
   const change = (event) => {
