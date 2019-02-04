@@ -27,7 +27,6 @@ class BooksApp extends Component {
   };
 
   /*
-  TODO: implementar se componente precisa ser renderizado
   TODO: tratamento de erros https://reactjs.org/docs/error-boundaries.html
   */
 

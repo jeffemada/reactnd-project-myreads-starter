@@ -12,9 +12,7 @@ function Book(props) {
    */
   const updateBookshelf = (shelfId) => {
     BooksAPI.update(book, shelfId).then(() => {
-      onRefresh();
-      // para visualizar imediatamente a nova prateleira na tela de pesquisa
-      book.shelf = shelfId;
+      onRefresh(book.id);
     });
   };
 

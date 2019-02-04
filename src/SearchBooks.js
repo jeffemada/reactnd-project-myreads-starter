@@ -8,6 +8,23 @@ class SearchBooks extends Component {
   state = { books: [] };
 
   /**
+   * Reconsulta o livro.
+   * @param {Object} bookId - identificador livro
+   */
+  refreshBook = (bookId) => {
+    const { onRefresh } = this.props;
+
+    BooksAPI.get(bookId).then((book) => {
+      this.setState((currentState) => {
+        currentState.books.find((b) => b.id === bookId).shelf = book.shelf;
+        return { book: currentState.books };
+      });
+    });
+    // callback para reconsultar os livros da estante
+    onRefresh();
+  };
+
+  /**
    * Atualiza as prateleiras dos livros que já estão na minha estante.
    * @param {Array} books - lista de livros retornados na pesquisa
    */
@@ -48,7 +65,6 @@ class SearchBooks extends Component {
 
   render() {
     const { books } = this.state;
-    const { onRefresh } = this.props;
 
     return (
       <div className="search-books">
@@ -57,13 +73,11 @@ class SearchBooks extends Component {
             Close
           </Link>
           <div className="search-books-input-wrapper">
-            <form>
-              <input type="text" placeholder="Search by title or author" onChange={this.searchBooks} />
-            </form>
+            <input type="text" placeholder="Search by title or author" onChange={this.searchBooks} />
           </div>
         </div>
         <div className="search-books-results">
-          <BooksGrid books={books} onRefresh={onRefresh} />
+          <BooksGrid books={books} onRefresh={this.refreshBook} />
         </div>
       </div>
     );
