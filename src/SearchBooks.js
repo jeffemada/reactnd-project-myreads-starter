@@ -9,7 +9,12 @@ import BooksGrid from './BooksGrid';
  * @constructor
  */
 class SearchBooks extends Component {
-  state = { books: [] };
+  static proptypes = {
+    onCloseSearch: PropTypes.func.isRequired,
+    onRefresh: PropTypes.func.isRequired
+  };
+
+  state = { books: [], lastRequest: '' };
 
   /**
    * @description Reconsulta o livro.
@@ -51,19 +56,43 @@ class SearchBooks extends Component {
    * @description Ouvinte do evento de mudança no campo de pesquisa.
    * @param {Event} event - evento
    */
-  searchBooks = (event) => {
+  updateQuery = (event) => {
     const query = event.target.value;
+    const requestId = Math.random()
+      .toString(36)
+      .substr(-8);
+    this.setState(() => ({ lastRequest: requestId }));
+    this.searchBooks(query, requestId);
+  };
 
+  /**
+   * @description Limpa a lista de livros pesquisados.
+   */
+  clearBooks = () => {
+    this.setState(() => ({ books: [] }));
+  };
+
+  /**
+   * @description Pesquisa os livros que atendem o filtro 'query'.
+   * @param query - filtro informado. O arquivo 'SEARCH_TERMS.md' possue uma
+   * lista de termos de pesquisa que podem ser usados como filtro.
+   * @param requestId - identificar da requisição
+   */
+  searchBooks = (query, lastRequest) => {
     if (query) {
       BooksAPI.search(query).then((books) => {
-        if (Array.isArray(books) && books.length > 0) {
-          this.updateBookshelfOfMyBooks(books);
-          this.setState(() => ({ books: books }));
+        // Verifica se é a ultima requisição realizada, caso contrário descarta retorno
+        if (requestId === this.state.lastRequest) {
+          if (Array.isArray(books) && books.length > 0) {
+            this.updateBookshelfOfMyBooks(books);
+            this.setState(() => ({ books: books }));
+          } else {
+            this.clearBooks();
+          }
         }
       });
-    } else if (this.state.books.length > 0) {
-      // TODO bug ao remover query rapidamente, não limpa
-      this.setState(() => ({ books: [] }));
+    } else {
+      this.clearBooks();
     }
   };
 
@@ -77,7 +106,7 @@ class SearchBooks extends Component {
             Close
           </Link>
           <div className="search-books-input-wrapper">
-            <input type="text" placeholder="Search by title or author" onChange={this.searchBooks} />
+            <input type="text" placeholder="Search by title or author" onChange={this.updateQuery} />
           </div>
         </div>
         <div className="search-books-results">
@@ -87,10 +116,5 @@ class SearchBooks extends Component {
     );
   }
 }
-
-SearchBooks.proptypes = {
-  onCloseSearch: PropTypes.func.isRequired,
-  onRefresh: PropTypes.func.isRequired
-};
 
 export default SearchBooks;
