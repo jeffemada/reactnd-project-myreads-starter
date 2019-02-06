@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Spinner from 'react-spinkit';
 import * as BooksAPI from './BooksAPI';
 import BooksGrid from './BooksGrid';
 
@@ -14,7 +15,7 @@ class SearchBooks extends Component {
     onRefresh: PropTypes.func.isRequired
   };
 
-  state = { books: [], lastRequest: '' };
+  state = { books: [], lastRequest: '', loading: false };
 
   /**
    * @description Reconsulta o livro.
@@ -78,17 +79,22 @@ class SearchBooks extends Component {
    * lista de termos de pesquisa que podem ser usados como filtro.
    * @param requestId - identificar da requisição
    */
-  searchBooks = (query, lastRequest) => {
+  searchBooks = (query, requestId) => {
     if (query) {
+      this.toggleLoading();
       BooksAPI.search(query).then((books) => {
-        // Verifica se é a ultima requisição realizada, caso contrário descarta retorno
-        if (requestId === this.state.lastRequest) {
-          if (Array.isArray(books) && books.length > 0) {
-            this.updateBookshelfOfMyBooks(books);
-            this.setState(() => ({ books: books }));
-          } else {
-            this.clearBooks();
+        try {
+          // Verifica se é a ultima requisição realizada, caso contrário descarta o retorno
+          if (requestId === this.state.lastRequest) {
+            if (Array.isArray(books) && books.length > 0) {
+              this.updateBookshelfOfMyBooks(books);
+              this.setState(() => ({ books: books }));
+            } else {
+              this.clearBooks();
+            }
           }
+        } finally {
+          this.toggleLoading();
         }
       });
     } else {
@@ -96,11 +102,19 @@ class SearchBooks extends Component {
     }
   };
 
+  /**
+   * @description Alterna entre exibir e não exibir o spinner de processamento.
+   */
+  toggleLoading = () => {
+    this.setState((currentState) => ({ loading: !currentState.loading }));
+  };
+
   render() {
-    const { books } = this.state;
+    const { books, loading } = this.state;
 
     return (
       <div className="search-books">
+        {loading && <Spinner className="spinner" name="line-spin-fade-loader" fadeIn="none" color="#60ac5d" />}
         <div className="search-books-bar">
           <Link className="close-search" to="/">
             Close
