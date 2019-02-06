@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
+import Spinner from 'react-spinkit';
 import './App.css';
 import * as BooksAPI from './BooksAPI';
 import ListBooks from './ListBooks';
@@ -11,14 +12,13 @@ import SearchBooks from './SearchBooks';
  * @param {Object} props
  */
 class BooksApp extends Component {
-  state = {
-    books: []
-  };
+  state = { books: [], loading: false };
 
   /**
    * @description Método do ciclo de vida do React invocado logo após o componente ser montado.
    */
   componentDidMount() {
+    this.toggleLoading();
     this.getAllMyBooks();
   }
 
@@ -27,24 +27,43 @@ class BooksApp extends Component {
    */
   getAllMyBooks = () => {
     BooksAPI.getAll().then((books) => {
-      this.setState(() => ({ books: books }));
+      try {
+        this.setState(() => ({ books: books }));
+      } finally {
+        this.toggleLoading();
+      }
     });
   };
 
-  /*
-  TODO: tratamento de erros https://reactjs.org/docs/error-boundaries.html
-  */
+  /**
+   * @description Alterna entre exibir e não exibir o spinner de processamento.
+   */
+  toggleLoading = () => {
+    this.setState((currentState) => ({ loading: !currentState.loading }));
+  };
 
   render() {
-    const { books } = this.state;
+    const { books, loading } = this.state;
 
     return (
       <div className="app">
+        {loading && <Spinner className="spinner" name="line-spin-fade-loader" fadeIn="none" color="#60ac5d" />}
         <Route
           path="/search"
-          render={() => <SearchBooks myBooks={books} onCloseSearch={this.closeSearch} onRefresh={this.getAllMyBooks} />}
+          render={() => (
+            <SearchBooks
+              myBooks={books}
+              onCloseSearch={this.closeSearch}
+              onRefresh={this.getAllMyBooks}
+              onLoading={this.toggleLoading}
+            />
+          )}
         />
-        <Route exact path="/" render={() => <ListBooks books={books} onRefresh={this.getAllMyBooks} />} />
+        <Route
+          exact
+          path="/"
+          render={() => <ListBooks books={books} onRefresh={this.getAllMyBooks} onLoading={this.toggleLoading} />}
+        />
       </div>
     );
   }

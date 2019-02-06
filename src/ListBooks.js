@@ -10,7 +10,7 @@ import { SHELVES } from './constants';
  * @param {Object} props
  */
 function ListBooks(props) {
-  const { books, onRefresh } = props;
+  const { books, onRefresh, onLoading } = props;
 
   return (
     <div className="list-books">
@@ -24,6 +24,7 @@ function ListBooks(props) {
             shelf={shelf}
             books={books.filter((book) => book.shelf === shelf.id)}
             onRefresh={onRefresh}
+            onLoading={onLoading}
           />
         ))}
       </div>
@@ -34,7 +35,8 @@ function ListBooks(props) {
 
 ListBooks.propTypes = {
   books: PropTypes.array.isRequired,
-  onRefresh: PropTypes.func.isRequired
+  onRefresh: PropTypes.func.isRequired,
+  onLoading: PropTypes.func.isRequired
 };
 
 export default ListBooks;

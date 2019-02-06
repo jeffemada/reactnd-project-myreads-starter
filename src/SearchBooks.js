@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Spinner from 'react-spinkit';
 import * as BooksAPI from './BooksAPI';
 import BooksGrid from './BooksGrid';
 
@@ -12,10 +11,11 @@ import BooksGrid from './BooksGrid';
 class SearchBooks extends Component {
   static proptypes = {
     onCloseSearch: PropTypes.func.isRequired,
-    onRefresh: PropTypes.func.isRequired
+    onRefresh: PropTypes.func.isRequired,
+    onLoading: PropTypes.func.isRequired
   };
 
-  state = { books: [], lastRequest: '', loading: false };
+  state = { books: [], lastRequest: '' };
 
   /**
    * @description Reconsulta o livro.
@@ -29,9 +29,10 @@ class SearchBooks extends Component {
         currentState.books.find((b) => b.id === bookId).shelf = book.shelf;
         return { book: currentState.books };
       });
+
+      // callback para reconsultar os livros da estante
+      onRefresh();
     });
-    // callback para reconsultar os livros da estante
-    onRefresh();
   };
 
   /**
@@ -81,7 +82,9 @@ class SearchBooks extends Component {
    */
   searchBooks = (query, requestId) => {
     if (query) {
-      this.toggleLoading();
+      const { onLoading } = this.props;
+
+      onLoading();
       BooksAPI.search(query).then((books) => {
         try {
           // Verifica se é a ultima requisição realizada, caso contrário descarta o retorno
@@ -94,7 +97,7 @@ class SearchBooks extends Component {
             }
           }
         } finally {
-          this.toggleLoading();
+          onLoading();
         }
       });
     } else {
@@ -102,19 +105,12 @@ class SearchBooks extends Component {
     }
   };
 
-  /**
-   * @description Alterna entre exibir e não exibir o spinner de processamento.
-   */
-  toggleLoading = () => {
-    this.setState((currentState) => ({ loading: !currentState.loading }));
-  };
-
   render() {
-    const { books, loading } = this.state;
+    const { books } = this.state;
+    const { onLoading } = this.props;
 
     return (
       <div className="search-books">
-        {loading && <Spinner className="spinner" name="line-spin-fade-loader" fadeIn="none" color="#60ac5d" />}
         <div className="search-books-bar">
           <Link className="close-search" to="/">
             Close
@@ -124,7 +120,7 @@ class SearchBooks extends Component {
           </div>
         </div>
         <div className="search-books-results">
-          <BooksGrid books={books} onRefresh={this.refreshBook} />
+          <BooksGrid books={books} onRefresh={this.refreshBook} onLoading={onLoading} />
         </div>
       </div>
     );

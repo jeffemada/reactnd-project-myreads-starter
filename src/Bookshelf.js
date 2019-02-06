@@ -8,13 +8,13 @@ import BooksGrid from './BooksGrid';
  * @param {Object} props
  */
 function Bookshelf(props) {
-  const { shelf, books, onRefresh } = props;
+  const { shelf, books, onRefresh, onLoading } = props;
 
   return (
     <div className="bookshelf">
       <h2 className="bookshelf-title">{shelf.title}</h2>
       <div className="bookshelf-books">
-        <BooksGrid books={books} onRefresh={onRefresh} />
+        <BooksGrid books={books} onRefresh={onRefresh} onLoading={onLoading} />
       </div>
     </div>
   );
@@ -23,7 +23,8 @@ function Bookshelf(props) {
 Bookshelf.propTypes = {
   shelf: PropTypes.object.isRequired,
   books: PropTypes.array.isRequired,
-  onRefresh: PropTypes.func.isRequired
+  onRefresh: PropTypes.func.isRequired,
+  onLoading: PropTypes.func.isRequired
 };
 
 export default Bookshelf;

@@ -8,12 +8,12 @@ import Book from './Book';
  * @param {Object} props
  */
 function BooksGrid(props) {
-  const { books, onRefresh } = props;
+  const { books, onRefresh, onLoading } = props;
 
   return (
     <ol className="books-grid">
       {books.map((book) => (
-        <Book key={book.id} book={book} onRefresh={onRefresh} />
+        <Book key={book.id} book={book} onRefresh={onRefresh} onLoading={onLoading} />
       ))}
     </ol>
   );
@@ -21,7 +21,8 @@ function BooksGrid(props) {
 
 BooksGrid.propTypes = {
   books: PropTypes.array.isRequired,
-  onRefresh: PropTypes.func.isRequired
+  onRefresh: PropTypes.func.isRequired,
+  onLoading: PropTypes.func.isRequired
 };
 
 export default BooksGrid;

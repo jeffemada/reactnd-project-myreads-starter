@@ -9,13 +9,14 @@ import ChangeBookshelf from './ChangeBookshelf';
  * @param {Object} props
  */
 function Book(props) {
-  const { onRefresh, book } = props;
+  const { book, onRefresh, onLoading } = props;
 
   /**
    * @description Altera o livro de prateleira.
    * @param {string} shelfId - identificador da pratelira selecionada
    */
   const updateBookshelf = (shelfId) => {
+    onLoading();
     BooksAPI.update(book, shelfId).then(() => {
       onRefresh(book.id);
     });
@@ -44,7 +45,8 @@ function Book(props) {
 
 Book.propTypes = {
   book: PropTypes.object.isRequired,
-  onRefresh: PropTypes.func.isRequired
+  onRefresh: PropTypes.func.isRequired,
+  onLoading: PropTypes.func.isRequired
 };
 
 export default Book;
