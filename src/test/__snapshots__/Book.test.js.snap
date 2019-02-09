@@ -1,0 +1,690 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a Book 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Book
+    book={
+      Object {
+        "authors": Array [
+          "Cassio de Sousa Antonio",
+        ],
+        "id": "PKpPCwAAQBAJ",
+        "imageLinks": Object {
+          "thumbnail": "http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        },
+        "shelf": "wantToRead",
+        "title": "Pro React",
+      }
+    }
+    onLoading={[MockFunction]}
+    onRefresh={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": "PKpPCwAAQBAJ",
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="book"
+      >
+        <div
+          className="book-top"
+        >
+          <div
+            className="book-cover"
+            style={
+              Object {
+                "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+              }
+            }
+          />
+          <ChangeBookshelf
+            currentShelf="wantToRead"
+            onUpdateBookshelf={[Function]}
+          />
+        </div>
+        <div
+          className="book-title"
+        >
+          Pro React
+        </div>
+        <div
+          className="book-authors"
+        >
+          Cassio de Sousa Antonio
+        </div>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="book-top"
+          >
+            <div
+              className="book-cover"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+                }
+              }
+            />
+            <ChangeBookshelf
+              currentShelf="wantToRead"
+              onUpdateBookshelf={[Function]}
+            />
+          </div>,
+          <div
+            className="book-title"
+          >
+            Pro React
+          </div>,
+          <div
+            className="book-authors"
+          >
+            Cassio de Sousa Antonio
+          </div>,
+        ],
+        "className": "book",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="book-cover"
+                style={
+                  Object {
+                    "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+                  }
+                }
+              />,
+              <ChangeBookshelf
+                currentShelf="wantToRead"
+                onUpdateBookshelf={[Function]}
+              />,
+            ],
+            "className": "book-top",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "book-cover",
+                "style": Object {
+                  "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "currentShelf": "wantToRead",
+                "onUpdateBookshelf": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Pro React",
+            "className": "book-title",
+          },
+          "ref": null,
+          "rendered": "Pro React",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Cassio de Sousa Antonio",
+            "className": "book-authors",
+          },
+          "ref": null,
+          "rendered": "Cassio de Sousa Antonio",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "li",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": "PKpPCwAAQBAJ",
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="book"
+        >
+          <div
+            className="book-top"
+          >
+            <div
+              className="book-cover"
+              style={
+                Object {
+                  "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+                }
+              }
+            />
+            <ChangeBookshelf
+              currentShelf="wantToRead"
+              onUpdateBookshelf={[Function]}
+            />
+          </div>
+          <div
+            className="book-title"
+          >
+            Pro React
+          </div>
+          <div
+            className="book-authors"
+          >
+            Cassio de Sousa Antonio
+          </div>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="book-top"
+            >
+              <div
+                className="book-cover"
+                style={
+                  Object {
+                    "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+                  }
+                }
+              />
+              <ChangeBookshelf
+                currentShelf="wantToRead"
+                onUpdateBookshelf={[Function]}
+              />
+            </div>,
+            <div
+              className="book-title"
+            >
+              Pro React
+            </div>,
+            <div
+              className="book-authors"
+            >
+              Cassio de Sousa Antonio
+            </div>,
+          ],
+          "className": "book",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="book-cover"
+                  style={
+                    Object {
+                      "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+                    }
+                  }
+                />,
+                <ChangeBookshelf
+                  currentShelf="wantToRead"
+                  onUpdateBookshelf={[Function]}
+                />,
+              ],
+              "className": "book-top",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "book-cover",
+                  "style": Object {
+                    "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "currentShelf": "wantToRead",
+                  "onUpdateBookshelf": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Pro React",
+              "className": "book-title",
+            },
+            "ref": null,
+            "rendered": "Pro React",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Cassio de Sousa Antonio",
+              "className": "book-authors",
+            },
+            "ref": null,
+            "rendered": "Cassio de Sousa Antonio",
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "li",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`should render a Book without authors and imageLinks 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Book
+    book={
+      Object {
+        "id": "PKpPCwAAQBAJ",
+        "title": "Pro React",
+      }
+    }
+    onLoading={[MockFunction]}
+    onRefresh={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": "PKpPCwAAQBAJ",
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="book"
+      >
+        <div
+          className="book-top"
+        >
+          <div
+            className="book-cover"
+          />
+          <ChangeBookshelf
+            currentShelf="none"
+            onUpdateBookshelf={[Function]}
+          />
+        </div>
+        <div
+          className="book-title"
+        >
+          Pro React
+        </div>
+        <div
+          className="book-authors"
+        >
+          
+        </div>
+      </div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="book-top"
+          >
+            <div
+              className="book-cover"
+            />
+            <ChangeBookshelf
+              currentShelf="none"
+              onUpdateBookshelf={[Function]}
+            />
+          </div>,
+          <div
+            className="book-title"
+          >
+            Pro React
+          </div>,
+          <div
+            className="book-authors"
+          >
+            
+          </div>,
+        ],
+        "className": "book",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="book-cover"
+              />,
+              <ChangeBookshelf
+                currentShelf="none"
+                onUpdateBookshelf={[Function]}
+              />,
+            ],
+            "className": "book-top",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "book-cover",
+                "style": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "currentShelf": "none",
+                "onUpdateBookshelf": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Pro React",
+            "className": "book-title",
+          },
+          "ref": null,
+          "rendered": "Pro React",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "",
+            "className": "book-authors",
+          },
+          "ref": null,
+          "rendered": "",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "li",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": "PKpPCwAAQBAJ",
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="book"
+        >
+          <div
+            className="book-top"
+          >
+            <div
+              className="book-cover"
+            />
+            <ChangeBookshelf
+              currentShelf="none"
+              onUpdateBookshelf={[Function]}
+            />
+          </div>
+          <div
+            className="book-title"
+          >
+            Pro React
+          </div>
+          <div
+            className="book-authors"
+          >
+            
+          </div>
+        </div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="book-top"
+            >
+              <div
+                className="book-cover"
+              />
+              <ChangeBookshelf
+                currentShelf="none"
+                onUpdateBookshelf={[Function]}
+              />
+            </div>,
+            <div
+              className="book-title"
+            >
+              Pro React
+            </div>,
+            <div
+              className="book-authors"
+            >
+              
+            </div>,
+          ],
+          "className": "book",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="book-cover"
+                />,
+                <ChangeBookshelf
+                  currentShelf="none"
+                  onUpdateBookshelf={[Function]}
+                />,
+              ],
+              "className": "book-top",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "book-cover",
+                  "style": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "currentShelf": "none",
+                  "onUpdateBookshelf": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Pro React",
+              "className": "book-title",
+            },
+            "ref": null,
+            "rendered": "Pro React",
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "",
+              "className": "book-authors",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "li",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

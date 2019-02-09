@@ -1,0 +1,1011 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a select 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ChangeBookshelf
+    currentShelf="none"
+    onUpdateBookshelf={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <select
+        onChange={[Function]}
+        value="none"
+      >
+        <option
+          disabled={true}
+          value="move"
+        >
+          Move to...
+        </option>
+        <option
+          value="wantToRead"
+        >
+          Want to Read
+        </option>
+        <option
+          value="currentlyReading"
+        >
+          Currently Reading
+        </option>
+        <option
+          value="read"
+        >
+          Read
+        </option>
+        <option
+          value="none"
+        >
+          None
+        </option>
+      </select>,
+      "className": "book-shelf-changer",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <option
+            disabled={true}
+            value="move"
+          >
+            Move to...
+          </option>,
+          Array [
+            <option
+              value="wantToRead"
+            >
+              Want to Read
+            </option>,
+            <option
+              value="currentlyReading"
+            >
+              Currently Reading
+            </option>,
+            <option
+              value="read"
+            >
+              Read
+            </option>,
+          ],
+          <option
+            value="none"
+          >
+            None
+          </option>,
+        ],
+        "onChange": [Function],
+        "value": "none",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Move to...",
+            "disabled": true,
+            "value": "move",
+          },
+          "ref": null,
+          "rendered": "Move to...",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "wantToRead",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Want to Read",
+            "value": "wantToRead",
+          },
+          "ref": null,
+          "rendered": "Want to Read",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "currentlyReading",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Currently Reading",
+            "value": "currentlyReading",
+          },
+          "ref": null,
+          "rendered": "Currently Reading",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "read",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Read",
+            "value": "read",
+          },
+          "ref": null,
+          "rendered": "Read",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "None",
+            "value": "none",
+          },
+          "ref": null,
+          "rendered": "None",
+          "type": "option",
+        },
+      ],
+      "type": "select",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <select
+          onChange={[Function]}
+          value="none"
+        >
+          <option
+            disabled={true}
+            value="move"
+          >
+            Move to...
+          </option>
+          <option
+            value="wantToRead"
+          >
+            Want to Read
+          </option>
+          <option
+            value="currentlyReading"
+          >
+            Currently Reading
+          </option>
+          <option
+            value="read"
+          >
+            Read
+          </option>
+          <option
+            value="none"
+          >
+            None
+          </option>
+        </select>,
+        "className": "book-shelf-changer",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              disabled={true}
+              value="move"
+            >
+              Move to...
+            </option>,
+            Array [
+              <option
+                value="wantToRead"
+              >
+                Want to Read
+              </option>,
+              <option
+                value="currentlyReading"
+              >
+                Currently Reading
+              </option>,
+              <option
+                value="read"
+              >
+                Read
+              </option>,
+            ],
+            <option
+              value="none"
+            >
+              None
+            </option>,
+          ],
+          "onChange": [Function],
+          "value": "none",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Move to...",
+              "disabled": true,
+              "value": "move",
+            },
+            "ref": null,
+            "rendered": "Move to...",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "wantToRead",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Want to Read",
+              "value": "wantToRead",
+            },
+            "ref": null,
+            "rendered": "Want to Read",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "currentlyReading",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Currently Reading",
+              "value": "currentlyReading",
+            },
+            "ref": null,
+            "rendered": "Currently Reading",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "read",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Read",
+              "value": "read",
+            },
+            "ref": null,
+            "rendered": "Read",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "None",
+              "value": "none",
+            },
+            "ref": null,
+            "rendered": "None",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`should select option "wantToRead" 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ChangeBookshelf
+    currentShelf="none"
+    onUpdateBookshelf={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <select
+        onChange={[Function]}
+        value="none"
+      >
+        <option
+          disabled={true}
+          value="move"
+        >
+          Move to...
+        </option>
+        <option
+          value="wantToRead"
+        >
+          Want to Read
+        </option>
+        <option
+          value="currentlyReading"
+        >
+          Currently Reading
+        </option>
+        <option
+          value="read"
+        >
+          Read
+        </option>
+        <option
+          value="none"
+        >
+          None
+        </option>
+      </select>,
+      "className": "book-shelf-changer",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <option
+            disabled={true}
+            value="move"
+          >
+            Move to...
+          </option>,
+          Array [
+            <option
+              value="wantToRead"
+            >
+              Want to Read
+            </option>,
+            <option
+              value="currentlyReading"
+            >
+              Currently Reading
+            </option>,
+            <option
+              value="read"
+            >
+              Read
+            </option>,
+          ],
+          <option
+            value="none"
+          >
+            None
+          </option>,
+        ],
+        "onChange": [Function],
+        "value": "none",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Move to...",
+            "disabled": true,
+            "value": "move",
+          },
+          "ref": null,
+          "rendered": "Move to...",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "wantToRead",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Want to Read",
+            "value": "wantToRead",
+          },
+          "ref": null,
+          "rendered": "Want to Read",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "currentlyReading",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Currently Reading",
+            "value": "currentlyReading",
+          },
+          "ref": null,
+          "rendered": "Currently Reading",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "read",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Read",
+            "value": "read",
+          },
+          "ref": null,
+          "rendered": "Read",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "None",
+            "value": "none",
+          },
+          "ref": null,
+          "rendered": "None",
+          "type": "option",
+        },
+      ],
+      "type": "select",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <select
+          onChange={[Function]}
+          value="none"
+        >
+          <option
+            disabled={true}
+            value="move"
+          >
+            Move to...
+          </option>
+          <option
+            value="wantToRead"
+          >
+            Want to Read
+          </option>
+          <option
+            value="currentlyReading"
+          >
+            Currently Reading
+          </option>
+          <option
+            value="read"
+          >
+            Read
+          </option>
+          <option
+            value="none"
+          >
+            None
+          </option>
+        </select>,
+        "className": "book-shelf-changer",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              disabled={true}
+              value="move"
+            >
+              Move to...
+            </option>,
+            Array [
+              <option
+                value="wantToRead"
+              >
+                Want to Read
+              </option>,
+              <option
+                value="currentlyReading"
+              >
+                Currently Reading
+              </option>,
+              <option
+                value="read"
+              >
+                Read
+              </option>,
+            ],
+            <option
+              value="none"
+            >
+              None
+            </option>,
+          ],
+          "onChange": [Function],
+          "value": "none",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Move to...",
+              "disabled": true,
+              "value": "move",
+            },
+            "ref": null,
+            "rendered": "Move to...",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "wantToRead",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Want to Read",
+              "value": "wantToRead",
+            },
+            "ref": null,
+            "rendered": "Want to Read",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "currentlyReading",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Currently Reading",
+              "value": "currentlyReading",
+            },
+            "ref": null,
+            "rendered": "Currently Reading",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "read",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Read",
+              "value": "read",
+            },
+            "ref": null,
+            "rendered": "Read",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "None",
+              "value": "none",
+            },
+            "ref": null,
+            "rendered": "None",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`should select option "wantToRead" 2`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ChangeBookshelf
+    currentShelf="none"
+    onUpdateBookshelf={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "wantToRead",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <select
+        onChange={[Function]}
+        value="none"
+      >
+        <option
+          disabled={true}
+          value="move"
+        >
+          Move to...
+        </option>
+        <option
+          value="wantToRead"
+        >
+          Want to Read
+        </option>
+        <option
+          value="currentlyReading"
+        >
+          Currently Reading
+        </option>
+        <option
+          value="read"
+        >
+          Read
+        </option>
+        <option
+          value="none"
+        >
+          None
+        </option>
+      </select>,
+      "className": "book-shelf-changer",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <option
+            disabled={true}
+            value="move"
+          >
+            Move to...
+          </option>,
+          Array [
+            <option
+              value="wantToRead"
+            >
+              Want to Read
+            </option>,
+            <option
+              value="currentlyReading"
+            >
+              Currently Reading
+            </option>,
+            <option
+              value="read"
+            >
+              Read
+            </option>,
+          ],
+          <option
+            value="none"
+          >
+            None
+          </option>,
+        ],
+        "onChange": [Function],
+        "value": "none",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Move to...",
+            "disabled": true,
+            "value": "move",
+          },
+          "ref": null,
+          "rendered": "Move to...",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "wantToRead",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Want to Read",
+            "value": "wantToRead",
+          },
+          "ref": null,
+          "rendered": "Want to Read",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "currentlyReading",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Currently Reading",
+            "value": "currentlyReading",
+          },
+          "ref": null,
+          "rendered": "Currently Reading",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": "read",
+          "nodeType": "host",
+          "props": Object {
+            "children": "Read",
+            "value": "read",
+          },
+          "ref": null,
+          "rendered": "Read",
+          "type": "option",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "None",
+            "value": "none",
+          },
+          "ref": null,
+          "rendered": "None",
+          "type": "option",
+        },
+      ],
+      "type": "select",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <select
+          onChange={[Function]}
+          value="none"
+        >
+          <option
+            disabled={true}
+            value="move"
+          >
+            Move to...
+          </option>
+          <option
+            value="wantToRead"
+          >
+            Want to Read
+          </option>
+          <option
+            value="currentlyReading"
+          >
+            Currently Reading
+          </option>
+          <option
+            value="read"
+          >
+            Read
+          </option>
+          <option
+            value="none"
+          >
+            None
+          </option>
+        </select>,
+        "className": "book-shelf-changer",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <option
+              disabled={true}
+              value="move"
+            >
+              Move to...
+            </option>,
+            Array [
+              <option
+                value="wantToRead"
+              >
+                Want to Read
+              </option>,
+              <option
+                value="currentlyReading"
+              >
+                Currently Reading
+              </option>,
+              <option
+                value="read"
+              >
+                Read
+              </option>,
+            ],
+            <option
+              value="none"
+            >
+              None
+            </option>,
+          ],
+          "onChange": [Function],
+          "value": "none",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Move to...",
+              "disabled": true,
+              "value": "move",
+            },
+            "ref": null,
+            "rendered": "Move to...",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "wantToRead",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Want to Read",
+              "value": "wantToRead",
+            },
+            "ref": null,
+            "rendered": "Want to Read",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "currentlyReading",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Currently Reading",
+              "value": "currentlyReading",
+            },
+            "ref": null,
+            "rendered": "Currently Reading",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": "read",
+            "nodeType": "host",
+            "props": Object {
+              "children": "Read",
+              "value": "read",
+            },
+            "ref": null,
+            "rendered": "Read",
+            "type": "option",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "None",
+              "value": "none",
+            },
+            "ref": null,
+            "rendered": "None",
+            "type": "option",
+          },
+        ],
+        "type": "select",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
