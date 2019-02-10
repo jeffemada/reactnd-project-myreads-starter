@@ -7,14 +7,15 @@ ShallowWrapper {
     book={
       Object {
         "authors": Array [
-          "Cassio de Sousa Antonio",
+          "Divya Manian",
         ],
-        "id": "PKpPCwAAQBAJ",
+        "id": "aaHXYmZLYNQC",
         "imageLinks": Object {
-          "thumbnail": "http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          "smallThumbnail": "http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
         },
         "shelf": "wantToRead",
-        "title": "Pro React",
+        "title": "HTML5 Boilerplate Web Development",
       }
     }
     onLoading={[MockFunction]}
@@ -31,7 +32,7 @@ ShallowWrapper {
   },
   Symbol(enzyme.__node__): Object {
     "instance": null,
-    "key": "PKpPCwAAQBAJ",
+    "key": "aaHXYmZLYNQC",
     "nodeType": "host",
     "props": Object {
       "children": <div
@@ -44,7 +45,7 @@ ShallowWrapper {
             className="book-cover"
             style={
               Object {
-                "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+                "backgroundImage": "url(\\"http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
               }
             }
           />
@@ -56,12 +57,12 @@ ShallowWrapper {
         <div
           className="book-title"
         >
-          Pro React
+          HTML5 Boilerplate Web Development
         </div>
         <div
           className="book-authors"
         >
-          Cassio de Sousa Antonio
+          Divya Manian
         </div>
       </div>,
     },
@@ -79,7 +80,7 @@ ShallowWrapper {
               className="book-cover"
               style={
                 Object {
-                  "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+                  "backgroundImage": "url(\\"http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
                 }
               }
             />
@@ -91,12 +92,12 @@ ShallowWrapper {
           <div
             className="book-title"
           >
-            Pro React
+            HTML5 Boilerplate Web Development
           </div>,
           <div
             className="book-authors"
           >
-            Cassio de Sousa Antonio
+            Divya Manian
           </div>,
         ],
         "className": "book",
@@ -113,7 +114,7 @@ ShallowWrapper {
                 className="book-cover"
                 style={
                   Object {
-                    "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+                    "backgroundImage": "url(\\"http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
                   }
                 }
               />,
@@ -133,7 +134,7 @@ ShallowWrapper {
               "props": Object {
                 "className": "book-cover",
                 "style": Object {
-                  "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+                  "backgroundImage": "url(\\"http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
                 },
               },
               "ref": null,
@@ -160,11 +161,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Pro React",
+            "children": "HTML5 Boilerplate Web Development",
             "className": "book-title",
           },
           "ref": null,
-          "rendered": "Pro React",
+          "rendered": "HTML5 Boilerplate Web Development",
           "type": "div",
         },
         Object {
@@ -172,11 +173,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Cassio de Sousa Antonio",
+            "children": "Divya Manian",
             "className": "book-authors",
           },
           "ref": null,
-          "rendered": "Cassio de Sousa Antonio",
+          "rendered": "Divya Manian",
           "type": "div",
         },
       ],
@@ -187,7 +188,7 @@ ShallowWrapper {
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
-      "key": "PKpPCwAAQBAJ",
+      "key": "aaHXYmZLYNQC",
       "nodeType": "host",
       "props": Object {
         "children": <div
@@ -200,7 +201,7 @@ ShallowWrapper {
               className="book-cover"
               style={
                 Object {
-                  "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+                  "backgroundImage": "url(\\"http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
                 }
               }
             />
@@ -212,12 +213,12 @@ ShallowWrapper {
           <div
             className="book-title"
           >
-            Pro React
+            HTML5 Boilerplate Web Development
           </div>
           <div
             className="book-authors"
           >
-            Cassio de Sousa Antonio
+            Divya Manian
           </div>
         </div>,
       },
@@ -235,7 +236,7 @@ ShallowWrapper {
                 className="book-cover"
                 style={
                   Object {
-                    "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+                    "backgroundImage": "url(\\"http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
                   }
                 }
               />
@@ -247,12 +248,12 @@ ShallowWrapper {
             <div
               className="book-title"
             >
-              Pro React
+              HTML5 Boilerplate Web Development
             </div>,
             <div
               className="book-authors"
             >
-              Cassio de Sousa Antonio
+              Divya Manian
             </div>,
           ],
           "className": "book",
@@ -269,7 +270,7 @@ ShallowWrapper {
                   className="book-cover"
                   style={
                     Object {
-                      "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+                      "backgroundImage": "url(\\"http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
                     }
                   }
                 />,
@@ -289,7 +290,7 @@ ShallowWrapper {
                 "props": Object {
                   "className": "book-cover",
                   "style": Object {
-                    "backgroundImage": "url(\\"http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
+                    "backgroundImage": "url(\\"http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api\\")",
                   },
                 },
                 "ref": null,
@@ -316,11 +317,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Pro React",
+              "children": "HTML5 Boilerplate Web Development",
               "className": "book-title",
             },
             "ref": null,
-            "rendered": "Pro React",
+            "rendered": "HTML5 Boilerplate Web Development",
             "type": "div",
           },
           Object {
@@ -328,11 +329,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Cassio de Sousa Antonio",
+              "children": "Divya Manian",
               "className": "book-authors",
             },
             "ref": null,
-            "rendered": "Cassio de Sousa Antonio",
+            "rendered": "Divya Manian",
             "type": "div",
           },
         ],

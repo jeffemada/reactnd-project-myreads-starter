@@ -2,21 +2,12 @@ import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import React from 'react';
 import Book from '../Book';
+import { BOOK_MOCK } from './constants';
 
 Enzyme.configure({ adapter: new Adapter() });
 
 it('should render a Book', () => {
-  const book = {
-    title: 'Pro React',
-    authors: ['Cassio de Sousa Antonio'],
-    imageLinks: {
-      thumbnail:
-        'http://books.google.com/books/content?id=PKpPCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'
-    },
-    id: 'PKpPCwAAQBAJ',
-    shelf: 'wantToRead'
-  };
-  const wrapper = shallow(<Book book={book} onRefresh={jest.fn()} onLoading={jest.fn()} />);
+  const wrapper = shallow(<Book book={BOOK_MOCK} onRefresh={jest.fn()} onLoading={jest.fn()} />);
   expect(wrapper).toMatchSnapshot();
 });
 
@@ -28,3 +19,5 @@ it('should render a Book without authors and imageLinks', () => {
   const wrapper = shallow(<Book book={book} onRefresh={jest.fn()} onLoading={jest.fn()} />);
   expect(wrapper).toMatchSnapshot();
 });
+
+// TODO: How can I call the method 'updateBookshelf' of the Stateless Component 'Book'?

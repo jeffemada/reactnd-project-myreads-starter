@@ -8,6 +8,18 @@ ShallowWrapper {
       Array [
         Object {
           "authors": Array [
+            "Divya Manian",
+          ],
+          "id": "aaHXYmZLYNQC",
+          "imageLinks": Object {
+            "smallThumbnail": "http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          },
+          "shelf": "wantToRead",
+          "title": "HTML5 Boilerplate Web Development",
+        },
+        Object {
+          "authors": Array [
             "Julie Ratner",
           ],
           "id": "sKvi5fVL-uAC",

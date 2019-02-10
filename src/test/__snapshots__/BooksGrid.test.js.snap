@@ -1,0 +1,262 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a BooksGrid 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <BooksGrid
+    books={
+      Array [
+        Object {
+          "authors": Array [
+            "Divya Manian",
+          ],
+          "id": "aaHXYmZLYNQC",
+          "imageLinks": Object {
+            "smallThumbnail": "http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          },
+          "shelf": "wantToRead",
+          "title": "HTML5 Boilerplate Web Development",
+        },
+        Object {
+          "authors": Array [
+            "Julie Ratner",
+          ],
+          "id": "sKvi5fVL-uAC",
+          "imageLinks": Object {
+            "smallThumbnail": "http://books.google.com/books/content?id=sKvi5fVL-uAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/content?id=sKvi5fVL-uAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+          },
+          "title": "Human Factors and Web Development",
+        },
+      ]
+    }
+    onLoading={[MockFunction]}
+    onRefresh={[MockFunction]}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Book
+          book={
+            Object {
+              "authors": Array [
+                "Divya Manian",
+              ],
+              "id": "aaHXYmZLYNQC",
+              "imageLinks": Object {
+                "smallThumbnail": "http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                "thumbnail": "http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              },
+              "shelf": "wantToRead",
+              "title": "HTML5 Boilerplate Web Development",
+            }
+          }
+          onLoading={[MockFunction]}
+          onRefresh={[MockFunction]}
+        />,
+        <Book
+          book={
+            Object {
+              "authors": Array [
+                "Julie Ratner",
+              ],
+              "id": "sKvi5fVL-uAC",
+              "imageLinks": Object {
+                "smallThumbnail": "http://books.google.com/books/content?id=sKvi5fVL-uAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                "thumbnail": "http://books.google.com/books/content?id=sKvi5fVL-uAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              },
+              "title": "Human Factors and Web Development",
+            }
+          }
+          onLoading={[MockFunction]}
+          onRefresh={[MockFunction]}
+        />,
+      ],
+      "className": "books-grid",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "aaHXYmZLYNQC",
+        "nodeType": "function",
+        "props": Object {
+          "book": Object {
+            "authors": Array [
+              "Divya Manian",
+            ],
+            "id": "aaHXYmZLYNQC",
+            "imageLinks": Object {
+              "smallThumbnail": "http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            },
+            "shelf": "wantToRead",
+            "title": "HTML5 Boilerplate Web Development",
+          },
+          "onLoading": [MockFunction],
+          "onRefresh": [MockFunction],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "sKvi5fVL-uAC",
+        "nodeType": "function",
+        "props": Object {
+          "book": Object {
+            "authors": Array [
+              "Julie Ratner",
+            ],
+            "id": "sKvi5fVL-uAC",
+            "imageLinks": Object {
+              "smallThumbnail": "http://books.google.com/books/content?id=sKvi5fVL-uAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+              "thumbnail": "http://books.google.com/books/content?id=sKvi5fVL-uAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+            },
+            "title": "Human Factors and Web Development",
+          },
+          "onLoading": [MockFunction],
+          "onRefresh": [MockFunction],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "ol",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Book
+            book={
+              Object {
+                "authors": Array [
+                  "Divya Manian",
+                ],
+                "id": "aaHXYmZLYNQC",
+                "imageLinks": Object {
+                  "smallThumbnail": "http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                },
+                "shelf": "wantToRead",
+                "title": "HTML5 Boilerplate Web Development",
+              }
+            }
+            onLoading={[MockFunction]}
+            onRefresh={[MockFunction]}
+          />,
+          <Book
+            book={
+              Object {
+                "authors": Array [
+                  "Julie Ratner",
+                ],
+                "id": "sKvi5fVL-uAC",
+                "imageLinks": Object {
+                  "smallThumbnail": "http://books.google.com/books/content?id=sKvi5fVL-uAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                  "thumbnail": "http://books.google.com/books/content?id=sKvi5fVL-uAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+                },
+                "title": "Human Factors and Web Development",
+              }
+            }
+            onLoading={[MockFunction]}
+            onRefresh={[MockFunction]}
+          />,
+        ],
+        "className": "books-grid",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "aaHXYmZLYNQC",
+          "nodeType": "function",
+          "props": Object {
+            "book": Object {
+              "authors": Array [
+                "Divya Manian",
+              ],
+              "id": "aaHXYmZLYNQC",
+              "imageLinks": Object {
+                "smallThumbnail": "http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                "thumbnail": "http://books.google.com/books/content?id=aaHXYmZLYNQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              },
+              "shelf": "wantToRead",
+              "title": "HTML5 Boilerplate Web Development",
+            },
+            "onLoading": [MockFunction],
+            "onRefresh": [MockFunction],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "sKvi5fVL-uAC",
+          "nodeType": "function",
+          "props": Object {
+            "book": Object {
+              "authors": Array [
+                "Julie Ratner",
+              ],
+              "id": "sKvi5fVL-uAC",
+              "imageLinks": Object {
+                "smallThumbnail": "http://books.google.com/books/content?id=sKvi5fVL-uAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+                "thumbnail": "http://books.google.com/books/content?id=sKvi5fVL-uAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+              },
+              "title": "Human Factors and Web Development",
+            },
+            "onLoading": [MockFunction],
+            "onRefresh": [MockFunction],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "ol",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
