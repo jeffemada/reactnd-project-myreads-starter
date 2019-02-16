@@ -9,7 +9,7 @@ import BooksGrid from './BooksGrid';
  * @constructor
  */
 class SearchBooks extends Component {
-  static proptypes = {
+  static propTypes = {
     onCloseSearch: PropTypes.func.isRequired,
     onRefresh: PropTypes.func.isRequired,
     onLoading: PropTypes.func.isRequired
